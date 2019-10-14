@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: lightblue;
+}
+
+.circle{
+	text-align: center;
+	font-size: 30px;
+	font-family:aclonica;
+	width: 100px;
+	padding: 50px;
+	line-height: 5;
+	margin: 80px auto;
+	background: pink;
+	color: aliceblue;
+	border-radius: 80px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.circle:hover{
+	background:#FFE2A4;
+	transform: scale(1.5)
+}
+
+.lines {
+	box-sizing:border-box;
+	border: 5px dashed #fff;
+	height: 0px;
+	width: 100%;
+	position:absolute;
+	top:45%;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+.mario {
+	position:absolute;
+	top:200px;
+	left:0px;
+	animation-name:drive;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+@keyframes drive{
+	from{ transform: translateX(0)}
+	to{ transform: translateX(2000px)}
+}
+
